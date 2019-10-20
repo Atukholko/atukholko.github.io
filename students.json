@@ -1,0 +1,2 @@
+students = '[{"name": "Alexey", "age": "20", "mark": 8.0},{"name": "Petr","age": "19","mark": 8.2},{"name": "Fedor","age": "18","mark": 7.3},{"name": "Kott","age": "17","mark": 6.0}]'
+test = '[]'
