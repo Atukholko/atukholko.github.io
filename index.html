@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mycompany</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_logo"><p>annihilation</p></div>   
+    <nav>
+        <div class="topnav" id="mytopnav">
+            <a class="go_to" href="#first">HOME</a>
+            <a class="go_to" href="#second">ABOUT</a>
+            <a class="go_to" href="#third">OUR TEAM</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACT</a>
+            <a href="#" id="menu" class="icon">&#9776</a>
+        </div>                
+    </nav>
+    </header>
+    <main>
+        <div class="main_welcome" id="first">
+            <h1>WELCOME ON <span class="mycompany">ANNIHILATION</span></h1>
+            <p>We are a modern agency whith years of <span class="white">experience</span> and <span class="white">cool guys</span></p>
+        </div>
+        <div class="wrapper">
+            <div class="main_about" id="second">
+                <div class="about_left">
+                    <img class="mv-100" src="images/logo.gif" alt="our logo">
+                </div>
+                <div class="about_right">
+                    <h1><span >SOME WORDS </span>ABOUT US</h1>
+                    <p>We were students of BSU. After graduation we opened our company. ANNIHILATION specializes in information technology. We are really cool, just trust us...</p>
+                    <ul>
+                        <li>front-end</li>
+                        <li>back-end</li>
+                        <li>weddings</li>
+                        <li>funeral</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_team" id="third">
+           <div class="wrapper">
+                <h1>OUR TEAM</h1>
+                <div class="line"></div>
+                <div class="team_cards">
+                <div class="card">
+                    <div class="photo"></div>
+                    <p class="name">Alexey Tukholko</p>
+                    <p class="position">CEO</p>
+                    <p class="about_position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsum nesciunt tenetur, doloremque iure itaque officia. Commodi repellat dicta ipsa assumenda ducimus necessitatibus nulla, id aliquam adipisci! Est, accusamus, minima!</p>
+                </div>
+                <div class="card">
+                    <div class="photo"></div>
+                    <p class="name">Anton Homtsov</p>
+                    <p class="position">CEO</p>
+                    <p class="about_position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsum nesciunt tenetur, doloremque iure itaque officia. Commodi repellat dicta ipsa assumenda ducimus necessitatibus nulla, id aliquam adipisci! Est, accusamus, minima!</p>
+                </div>
+                <div class="card">
+                    <div class="photo"></div>
+                    <p class="name">Alexandr Ilyin</p>
+                    <p class="position">CEO</p>
+                    <p class="about_position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsum nesciunt tenetur, doloremque iure itaque officia. Commodi repellat dicta ipsa assumenda ducimus necessitatibus nulla, id aliquam adipisci! Est, accusamus, minima!</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jQuery.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+        }
+	    return false; // выключаем стандартное действие
+    });
+});
+    </script>
+</body>
+</html>
