@@ -1,1 +1,22 @@
-[{"name": "Alexey", "age": "20", "mark": 8.0},{"name": "Petr","age": "19","mark": 8.2},{"name": "Fedor","age": "18","mark": 7.3},{"name": "Kott","age": "17","mark": 6.0}]
+[{
+  "firstName": "Ivan",
+  "lastName": "Ivanich",
+  "age": "7",
+  "average": "10.0"
+ },
+  {
+  "firstName": "Petya",
+  "lastName": "Good",
+  "age": "19",
+  "average": "20.0"
+ }, {
+  "firstName": "Grisha",
+  "lastName": "Sosiska",
+  "age": "18",
+  "average": "9.3"
+ }, {
+  "firstName": "Privet",
+  "lastName": "Tyda",
+  "age": "16",
+  "average": "4.3"
+ }]
